@@ -10,7 +10,8 @@ Git. The repo is configured to preserve line-endings, but be careful manually
 editing .ics and text files!
 
 Currently deployed to fly.io at
-[https://troop-62-calendar-proxy-wandering-dream-8989.fly.dev](https://troop-62-calendar-proxy-wandering-dream-8989.fly.dev)
+[https://troop-62-calendar-proxy-wandering-dream-8989.fly.dev](https://troop-62-calendar-proxy-wandering-dream-8989.fly.dev).
+Service will automatically deploy on push to main.
 
 ## Dev
 
