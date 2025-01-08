@@ -9,6 +9,6 @@ sudo docker run \
 --env 'PORT=3010' \
 --workdir "/home/node/app" \
 --volume nextcloud_aio_mastercontainer:/mnt/docker-aio-config \
---volume /var/www/troop-62-calendar-proxy:/home/node/app:ro \
---entrypoint '["npm", "start"]' \
-.
+--volume /var/www/troop-62-calendar-proxy:/app:ro \
+--rm \
+$(docker build -q .)
