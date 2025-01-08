@@ -1,6 +1,6 @@
 #!/bin/bash
 
-sudo docker buildx build -t troop-62-calendar-proxy .
+sudo docker buildx build -t troop-62-calendar-proxy:latest .
 sudo docker run \
 --init \
 --name troop-62-calendar-proxy \
