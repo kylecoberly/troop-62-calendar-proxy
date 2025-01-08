@@ -3,17 +3,15 @@ import { expect, test } from "vitest";
 import { readFile } from "fs/promises";
 
 import app from "../src/app";
-import Patch from "../src/patch";
-
-const { fetchIcal, patchIcal } = Patch;
+import patchIcal from "../src/patch";
 
 test("Request works", async () => {
   const response = await request(app)
     .get("/")
     .expect(200)
-    .expect("Content-Type", /json/);
+    .expect("Content-Type", /calendar/);
 
-  expect(response.body).toEqual({ a: "b" });
+  expect(response.text).toContain("BEGIN:VTIMEZONE");
 });
 
 test("patches iCal files with the timezone", async () => {
