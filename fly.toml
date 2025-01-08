@@ -7,6 +7,8 @@ app = 'troop-62-calendar-proxy'
 primary_region = 'den'
 
 [build]
+  builder = "paketobuildpacks/builder:base"
+  buildpacks = ["gcr.io/paketo-buildpacks/nodejs"]
 
 [http_service]
   internal_port = 3000
