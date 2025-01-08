@@ -4,22 +4,27 @@
   "engines": {
     "node": "20.18.1"
   },
-  "description": "GoDaddy doesn't add local timezone information correctly to scouting.org's ical files. This is a web proxy that fetches the ical file, adds the Denver timezone, and passes it back along.",
+  "description": "The Scouting API returns event .ics files in Zulu time, which is a distinct time zone. This service fetches the .ics file from api.scouting.org, strips Zulu time from the events, and adds the US/Denver timezone to each event. You can point GoDaddy to this service to get the Troop 62 calendar in the correct timezone.",
   "main": "src/index.js",
-  "dependencies": {
-    "express": "^4.21.2"
-  },
   "scripts": {
     "start": "node src/index.js",
     "dev": "nodemon src/index.js",
     "test": "vitest"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "keywords": [
+    "scouting",
+    "scoutbook",
+    "godaddy"
+  ],
+  "author": "Kyle Coberly",
+  "license": "MIT",
   "devDependencies": {
+    "@flydotio/dockerfile": "^0.6.1",
     "nodemon": "^3.1.9",
     "supertest": "^7.0.0",
     "vitest": "^2.1.8"
+  },
+  "dependencies": {
+    "express": "^4.21.2"
   }
 }

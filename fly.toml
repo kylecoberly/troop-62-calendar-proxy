@@ -1,14 +1,12 @@
-# fly.toml app configuration file generated for troop-62-calendar-proxy on 2025-01-08T09:10:59Z
+# fly.toml app configuration file generated for troop-62-calendar-proxy-wandering-dream-8989 on 2025-01-08T04:07:19-07:00
 #
 # See https://fly.io/docs/reference/configuration/ for information about how to use this file.
 #
 
-app = 'troop-62-calendar-proxy'
+app = 'troop-62-calendar-proxy-wandering-dream-8989'
 primary_region = 'den'
 
 [build]
-  builder = "paketobuildpacks/builder:base"
-  buildpacks = ["gcr.io/paketo-buildpacks/nodejs"]
 
 [http_service]
   internal_port = 3000
@@ -22,4 +20,3 @@ primary_region = 'den'
   memory = '1gb'
   cpu_kind = 'shared'
   cpus = 1
-  memory_mb = 1024
