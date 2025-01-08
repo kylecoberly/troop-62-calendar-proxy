@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//advancements.scouting.org///NONSGML v1.0//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Troop 0062 (Boys)
+BEGIN:VEVENT
+UID:5227156@advancements.scouting.org
+DTSTAMP:20250108T023355Z
+CREATED:20230804T141937Z
+ORGANIZER:Nel Nelson
+DTSTART:20240120T000000Z
+DTEND:20240121T213000Z
+SUMMARY:T62b Intro to Winterwise
+DESCRIPTION:**Resent with updated roster again 1/2/24**\n\nTroop!  \nAs part of our annual 3-month winter program\, here is Hynds Lodge 2024!.  This is a lodge-camping outing designed to ease into the winter fun for both the old-hands and first-timers\, please set the date aside in your family calendar\n\nUp to 30 scouts can cram themselves into the semi-heated bunk room upstairs\, and a certain number of adults will enjoy the downstairs sleeping arrangements\, so space is limited.  The building is heated and usually has electricity\, fireplace and a gas/electric kitchen.  Situated in some pretty good Wyoming wilderness\, this is an environment that Colorado scouts understand.  SPL will provide details as we get closer so watch this space.  Registration will close Jan 9 for driving arrangements and food planning!
+URL:https://advancements.scouting.org/calendar/event/5227156
+LOCATION:Hynds' Lodge\, Curt Gowdy State Park\, WYOMING not CO
+END:VEVENT
+END:VCALENDAR
