@@ -11,4 +11,4 @@ sudo docker run \
 --volume nextcloud_aio_mastercontainer:/mnt/docker-aio-config \
 --volume /var/www/troop-62-calendar-proxy:/home/node/app:ro \
 --entrypoint '["npm", "start"]' \
-node:23
+.
