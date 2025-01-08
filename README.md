@@ -20,5 +20,5 @@ Uses Express, Supertest, and Vitest.
 ```
 npm install
 npm test
-npm dev
+npm run dev
 ```
