@@ -1,6 +1,9 @@
 {
   "name": "troop-62-calendar-proxy",
   "version": "1.1.0",
+  "engines": {
+    "node": "20.18.1"
+  },
   "description": "GoDaddy doesn't add local timezone information correctly to scouting.org's ical files. This is a web proxy that fetches the ical file, adds the Denver timezone, and passes it back along.",
   "main": "src/index.js",
   "dependencies": {
