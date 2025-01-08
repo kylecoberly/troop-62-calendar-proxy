@@ -1,23 +1,23 @@
 const express = require("express");
-const { readFile } = require("fs/promises");
+const { readFileSync } = require("fs");
 
 const patchIcal = require("./patch");
-
-const app = express();
-
+const timezone = readFileSync("./src/timezones/denver.txt", "utf8");
 const CALENDAR_URL =
   "https://api.scouting.org/advancements/events/calendar/48837";
+
+const app = express();
 
 app.get("/", async (_, response) => {
   const sourceIcal = await fetch(CALENDAR_URL)
     .then((response) => response.text());
-  const timezone = await readFile("./src/timezone.txt", "utf8");
 
   const patchedIcal = patchIcal(sourceIcal, timezone);
 
-  response.status(200);
-  response.set("Content-Type", "text/calendar");
-  response.send(patchedIcal);
+  response
+    .status(200)
+    .set("Content-Type", "text/calendar")
+    .send(patchedIcal);
 });
 
 app.get((error, request, response, next) => {

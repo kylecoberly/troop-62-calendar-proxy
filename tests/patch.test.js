@@ -17,7 +17,7 @@ test("Request works", async () => {
 test("patches iCal files with the timezone", async () => {
   const source = await readFile("./samples/scouting-simple.ics", "utf8");
   const target = await readFile("./samples/patched-simple.ics", "utf8");
-  const timezone = await readFile("./src/timezone.txt", "utf8");
+  const timezone = await readFile("./src/timezones/denver.txt", "utf8");
 
   const patchedFile = patchIcal(source, timezone);
 
