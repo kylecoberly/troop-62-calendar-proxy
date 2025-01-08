@@ -16,7 +16,7 @@ app.get("/", async (_, response) => {
 
   response
     .status(200)
-    .set("Content-Type", "text/calendar")
+    .set("Content-Type", "text/calendar; charset=UTF-8")
     .send(patchedIcal);
 });
 
